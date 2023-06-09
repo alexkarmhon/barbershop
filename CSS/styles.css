@@ -68,6 +68,10 @@ ol {
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
 .container {
   display: flex;
   width: 1280px;
