@@ -133,6 +133,15 @@ p {
   color: var(--dark-theme-secondary-text-a);
 }
 
+.subtitle::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background: var(--dark-theme-secondary-text-a);
+}
+
 .hero-title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -251,6 +260,20 @@ p {
 /* ================================HEADER END================================ */
 
 /* ===================================HERO=================================== */
+.hero .container {
+  padding: 0;
+}
+
+.hero-left-part {
+  width: 155px;
+
+  border: 1px dotted teal;
+}
+
+.hero-right-part {
+  padding-left: 100px;
+  background-image: url(../images/hero/hero_image.jpg);
+}
 /* =================================HERO END================================= */
 
 /* ==================================ABOUT================================== */
@@ -267,6 +290,7 @@ p {
 }
 /* ================================ABOUT END================================ */
 /* =================================SERVICES================================= */
+
 .services .container {
   display: block;
   background-image: url(../images/services/services-png.png);
