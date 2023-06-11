@@ -34,6 +34,7 @@ body {
 }
 
 .link {
+  display: flex;
   color: inherit;
   text-decoration: none;
 
@@ -285,9 +286,19 @@ p {
 }
 
 .hero-left-part {
+  position: relative;
   width: 155px;
 
   border: 1px dotted teal;
+}
+
+.hero .social-link-list {
+  position: absolute;
+  bottom: 0;
+  left: 89px;
+  margin: 0;
+  transform: rotate(270deg);
+  transform-origin: 0px 0px;
 }
 
 .hero-right-part {
@@ -409,6 +420,26 @@ p {
   line-height: 1.67;
   letter-spacing: 0.02em;
 }
+
+.social-icons-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+.social-icon-list-item {
+  display: flex;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  background-color: var(--dark-theme-main-title);
+  border-radius: 50%;
+  border: 1px solid teal;
+}
+
+
 /* ===============================MASTERS END================================ */
 
 /* =================================GALERY=================================== */
