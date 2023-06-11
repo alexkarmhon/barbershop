@@ -203,7 +203,7 @@ p {
 
 /* ==================================HEADER================================== */
 .header {
-  /* position: absolute; */
+  position: absolute;
   display: flex;
   width: 100%;
 }
@@ -425,7 +425,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
 }
 
 .social-icon-list-item {
@@ -436,8 +435,27 @@ p {
   padding: 12px;
   background-color: var(--dark-theme-main-title);
   border-radius: 50%;
-  border: 1px solid teal;
 }
+
+.social-icon-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-title-color);
+
+  transition: fill 250ms linear;
+}
+
+.social-icon-list-item:hover .social-icon,
+.social-link-icon:hover .social-icon,
+.social-link-icon:focus .social-icon {
+  outline: none;
+  fill: var(--accent-color);
+}
+
 
 
 /* ===============================MASTERS END================================ */
