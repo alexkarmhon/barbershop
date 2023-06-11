@@ -6,6 +6,7 @@
   --dark-theme-secondary-text: #9da4bd;
   --dark-theme-secondary-text-a: #9da4bd99;
   --secondary-background-color: #F7F7F7;
+  --body-background-color: #E5E5E5;
 }
 
 * {
@@ -19,6 +20,7 @@ body {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
+  background-color: var(--body-background-color);
 }
 
 .visually-hidden {
@@ -85,8 +87,7 @@ img {
   width: 1280px;
   padding: 130px 55px;
   margin: 0 auto;
-
-  outline: 1px solid teal;
+  background-color: var(--dark-theme-main-title);
 }
 
 .social-link-list {
@@ -158,7 +159,6 @@ p {
   width: 60px;
   height: 1px;
   margin-right: 20px;
-  /* background: var(--dark-theme-secondary-text-a); */
   background-color: currentColor;
 }
 
@@ -211,7 +211,7 @@ p {
 .header .container {
   justify-content: space-between;
   padding: 32px 55px;
-
+  background-color: unset;
 }
 
 .nav-bar {
@@ -237,7 +237,9 @@ p {
   margin-left: 40px;
 }
 
-.nav-link {
+.feed-panel {
+  display: flex;
+  align-items: center;
 }
 
 .tel-link {
@@ -268,6 +270,10 @@ p {
   transition: background-color 250ms linear, color 250ms linear ;
 }
 
+.dark .main-btn {
+  color: var(--dark-theme-main-title);
+}
+
 .main-btn:hover,
 .main-btn:focus {
   background-color: var(--accent-color);
@@ -275,9 +281,7 @@ p {
   cursor: pointer;
 }
 
-.dark .main-btn {
-  color: var(--dark-theme-main-title);
-}
+
 /* ================================HEADER END================================ */
 
 /* ===================================HERO=================================== */
@@ -288,8 +292,6 @@ p {
 .hero-left-part {
   position: relative;
   width: 155px;
-
-  border: 1px dotted teal;
 }
 
 .hero .social-link-list {
