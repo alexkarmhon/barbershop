@@ -40,10 +40,17 @@ body {
   transition: color 250ms linear;
 }
 
+.link.dark {
+  color: var(--dark-theme-main-title);
+}
+
 .link:hover,
 .link:focus {
   color: var(--accent-color);
+  cursor: pointer;
 }
+
+
 
 .list {
   list-style: none;
@@ -83,6 +90,15 @@ img {
 
 .social-link-list {
   display: flex;
+  align-items: center;
+}
+
+.social-link-list::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 40px;
+  background-color: currentColor;
 }
 
 .social-link-item:not(:last-child) {
@@ -120,6 +136,8 @@ p {
 }
 
 .subtitle {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
@@ -139,7 +157,8 @@ p {
   width: 60px;
   height: 1px;
   margin-right: 20px;
-  background: var(--dark-theme-secondary-text-a);
+  /* background: var(--dark-theme-secondary-text-a); */
+  background-color: currentColor;
 }
 
 .hero-title {
@@ -183,9 +202,9 @@ p {
 
 /* ==================================HEADER================================== */
 .header {
+  /* position: absolute; */
   display: flex;
   width: 100%;
-  outline: 1px solid red;
 }
 
 .header .container {
@@ -252,6 +271,7 @@ p {
 .main-btn:focus {
   background-color: var(--accent-color);
   color: var(--dark-theme-main-title);
+  cursor: pointer;
 }
 
 .dark .main-btn {
@@ -271,6 +291,11 @@ p {
 }
 
 .hero-right-part {
+  display: block;
+  align-items: center;
+  width: 1070px;
+  height: 680px;
+  padding-top: 272px;
   padding-left: 100px;
   background-image: url(../images/hero/hero_image.jpg);
 }
@@ -448,10 +473,27 @@ p {
 .adress-list > li {
   margin-bottom: 20px;
 }
+
+.contacts-section > .subtitle {
+  color: var(--dark-theme-main-title);
+}
 /* ==============================CONTACTS END================================ */
 
 /* =================================FOOTER=================================== */
 .footer .container {
   justify-content: space-between;
+  align-items: center;
+  padding: 56px 55px;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.footer .social-link-item > .link {
+  margin-bottom: 0;
+  padding: 0;
 }
 /* ===============================FOOTER END================================= */
