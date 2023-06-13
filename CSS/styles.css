@@ -17,8 +17,6 @@ body {
   font-family: 'Open Sans',sans-serif;
   font-style: normal;
   font-weight: 400;
-
-  background-color: palevioletred;
 }
 
 section {
@@ -373,7 +371,6 @@ p {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
-  /* outline: 1px solid teal; */
 }
 
 .price-list > li:not(:last-child) {
@@ -394,31 +391,70 @@ p {
 }
 /* ===============================SERVICES END=============================== */
 
-/* =================================FEATURES================================= */
-.features .container {
+/* =================================ADVANTAGES================================= */
+.advantages .container {
   display: flex;
   padding-top: 130px;
   padding-bottom: 130px;
 }
 
-.our-features {
-  width: 50%;
+.our-advantages.left {
+  width: calc((100% - 30px) / 2);
+  margin-left: 0;
   padding: 0 65px;
-
-  border: 1px dotted teal;
 }
 
-.features-list-item {
+.our-advantages.right {
+  width: calc((100% - 30px) / 2);
+  margin-bottom: 0;
+  padding-left: 30px;
+  margin-right: 0;
+}
+
+.advantages-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 170px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  margin: 0 auto;
+}
+
+.advantages-list-item {
+  width: calc(50% - 30px);
   height: 133px;
-  padding: 20px;
-  border: 1px dotted teal;
+  padding: 20px 20px;
   background-color: var(--secondary-background-color);
 }
-/* ===============================FEATURES END=============================== */
+
+.advantages-li-title {
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.357;
+  text-align: center;
+  letter-spacing: 0.05em;
+  
+  color: var(--main-title-color);
+}
+
+.advantages-li-text {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.363;
+  text-align: center;
+  
+  color: var(--main-title-color);
+}
+
+.advantages-list-item:nth-child(even) {
+  margin-top: 30px;
+}
+
+.advantages-list-item:not(:nth-child(even)) {
+  margin-right: 30px;
+}
+/* ===============================ADVANTAGES END=============================== */
 
 /* =================================MASTERS================================== */
 .masters {
@@ -464,10 +500,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.social-icon-list-item {
- 
 }
 
 .social-icon-list-item:not(:last-child) {
@@ -543,12 +575,10 @@ p {
 
 .contacts-container {
   width: 100%;
-  border: 1px solid #FFFFFF;
 }
 
-.container {
+.contacts .container {
   display: flex;
-  outline: 1px dotted #FFFFFF;
 }
 
 .form-section {
@@ -557,6 +587,10 @@ p {
   padding-bottom: 130px;
   padding-left: 15px;
   padding-right: 40px;
+}
+
+.form-section > .section-title {
+  margin-bottom: 44px;
 }
 
 .booking-form-container {
