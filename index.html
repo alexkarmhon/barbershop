@@ -294,34 +294,55 @@
     </section>
     <!-- CONTACTS -->
     <section class="contacts">
-      <div class="container dark">
-        <div class="form-section">
-          <h2 class="section-title">Онлайн-запис</h2>
-          <form action="">
-            <button type="submit" class="main-btn">надіслати</button>
-          </form>
-        </div>
-        <div class="contacts-section">
-          <h2 class="section-title">Контакти</h2>
-          <address class="adress">
-            <ul class="adress-list list">
-              <li>
-                <a href="https://goo.gl/maps/dubJii9RHFpS2M1W6" target="_blank" rel="noopener noreferrer" class="link">вул. Василькова, 7А Київ, 08132</a>
-              </li>
-              <li>
-                <a href="tel:+380441111111" class="link">+38 044 111 11 11</a>
-              </li>
-              <li>
-                <a href="mailto:barbershop@email.com" class="link">barbershop@email.com</a>
-              </li>
-            </ul>
-          </address>
-          <p class="subtitle">Час роботи</p>
-          <p>Щоденно з 9:00 до 22:00</p>
+      <div class="contacts-container dark">
+        <div class="container">
+          <div class="form-section">
+            <h2 class="section-title">Онлайн-запис</h2>
+            <form action="" class="booking-form">
+              <div class="booking-form-container">
+                <input type="text" class="form-input" placeholder="Ім'я*" required>
+                <input type="tel" class="form-input" placeholder="Телефон*" required>
+              </div>
+              <textarea name="message" id="" class="form-input textarea-form" rows="4" placeholder="Повідомлення" ></textarea>
+              <button type="submit" class="main-btn">надіслати</button>
+            </form>
+          </div>
+          <div class="contacts-section">
+            <h2 class="section-title">Контакти</h2>
+            <address class="adress">
+              <ul class="adress-list list">
+                <li class="adress-list-item">
+                  <a href="https://goo.gl/maps/dubJii9RHFpS2M1W6" target="_blank" rel="noopener noreferrer" class="link">
+                    <svg class="adress-list-icon" width="20" height="20">
+                      <use href="./images/icons/symbol-defs.svg#icon-map-pin"></use>
+                    </svg>
+                    вул.Василькова, 7А Київ, 08132</a>
+                </li>
+                <li class="adress-list-item">
+                  <a href="tel:+380441111111" class="link">
+                    <svg class="adress-list-icon" width="20" height="20">
+                      <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
+                    </svg>
+                    +38 044 111 11 11</a>
+                </li>
+                <li class="adress-list-item">
+                  <a href="mailto:barbershop@email.com" class="link">
+                    <svg class="adress-list-icon" width="20" height="20">
+                      <use href="./images/icons/symbol-defs.svg#icon-mail"></use>
+                    </svg>
+                    barbershop@email.com</a>
+                </li>
+              </ul>
+            </address>
+            <p class="subtitle">Час роботи</p>
+            <p>Щоденно з 9:00 до 22:00</p>
+          </div>
         </div>
       </div>
     </section>
-  </main>
+    
+    
+  
   <!-- ПІДВАЛ -->
   <footer class="footer">
     <div class="container">
