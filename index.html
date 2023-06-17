@@ -319,12 +319,12 @@
         <div class="container">
           <div class="form-section">
             <h2 class="section-title">Онлайн-запис</h2>
-            <form action="" class="booking-form">
+            <form action="" class="booking-form" autocomplete="off">
               <div class="booking-form-container">
-                <input type="text" class="form-input" placeholder="Ім'я*" required>
-                <input type="tel" class="form-input" placeholder="Телефон*" required>
+                <input type="text" name="user-name" class="form-input" placeholder="Ім'я*" required>
+                <input type="tel" name="user-tel" class="form-input" placeholder="Телефон*" required>
               </div>
-              <textarea name="message" id="" class="form-input textarea-form" rows="4" placeholder="Повідомлення" ></textarea>
+              <textarea name="user-message" id="" class="form-input textarea-form" rows="4" placeholder="Повідомлення" ></textarea>
               <button type="submit" class="main-btn">надіслати</button>
             </form>
           </div>
@@ -393,12 +393,12 @@
     </button>
     <div class="modal-form-section">
       <h2 class="section-title">Онлайн-запис</h2>
-      <form action="" class="booking-form light-theme">
+      <form action="" class="booking-form light-theme" autocomplete="off">
         <div class="booking-form-container">
-          <input type="text" class="form-input light-theme" placeholder="Ім'я*" required>
-          <input type="tel" class="form-input light-theme" placeholder="Телефон*" required>
+          <input type="text" name="user-name" class="form-input light-theme" placeholder="Ім'я*" required>
+          <input type="tel" name="user-tel" class="form-input light-theme" placeholder="Телефон*" required>
         </div>
-        <textarea name="message" id="" class="form-input textarea-form light-theme" rows="4" placeholder="Повідомлення"></textarea>
+        <textarea name="user-message" id="" class="form-input textarea-form light-theme" rows="4" placeholder="Повідомлення"></textarea>
         <button type="submit" class="main-btn">надіслати</button>
       </form>
     </div>
