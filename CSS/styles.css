@@ -731,23 +731,102 @@ p {
 /* =================================MODAL==================================== */
 .overlay {
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
 
   background-color: rgba(85, 85, 85, 0.5);
+
+  transform: scale(1);
+  transition: transform 400ms ease-out, opacity 400ms ease-out;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0);
+  transition: transform 400ms ease-out, opacity 400ms ease-out;
 }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 500px;
-  height: 700px;
+
+  display: flex;
+  width: 640px;
+  height: 640px;
+  padding: 130px 40px;
 
   transform: translate(-50%, -50%);
 
   background-color: var(--body-background-color);
+}
+
+.btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  
+  transform: translate(30%, -30%);
+
+  outline: none;
+  border-style: none;
+  background-color: var(--dark-theme-secondary-text-a);
+  border-radius: 50%;
+}
+
+.btn-close-icon {
+  transition: fill 250ms linear;
+}
+
+.btn-close:hover > .btn-close-icon,
+.btn-close:focus > .btn-close-icon {
+  fill: var(--accent-color);
+}
+
+.modal-form-section {
+  width: 100%;
+  text-align: center;
+}
+
+.modal-form-section .section-title {
+  margin-bottom: 80px;
+}
+
+.modal-form-section .textarea-form {
+  margin-bottom: 80px;
+}
+
+.form-input.light-theme {
+  color: var(--main-title-color);
+  border-bottom: 1px solid var(--main-title-color);
+}
+
+.textarea-form.light-theme {
+  color: var(--main-title-color);
+  border-bottom: 1px solid var(--main-title-color);
+}
+
+.form-input.light-theme::placeholder {
+  color: var(--main-title-color);
+  background-color: inherit;
+  border-style: none;
+}
+
+.form-input.light-theme:focus {
+  color: var(--secondary-text-color);
+  border-color: var(--accent-color);
+}
+
+.form-input.light-theme:focus::placeholder {
+  color: var(--dark-theme-secondary-text-a);
 }
 /* ===============================MODAL END================================== */
