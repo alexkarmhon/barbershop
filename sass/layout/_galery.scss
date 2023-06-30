@@ -1,0 +1,22 @@
+.galery .container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.galery .subtitle {
+  margin-bottom: 44px;
+}
+
+.fotogalery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.fotogalery>.foto {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}

@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./CSS/styles.css">
+  <link rel="stylesheet" href="./css/main.min.css">
   <title>Barbershop</title>
 </head>
 <body>
@@ -65,7 +65,7 @@
         <div class="hero-right-part dark">
           <p lang="en" class="subtitle">A hair salon for men in Kyiv</p>
           <h1 lang="en" class="hero-title">BarberShop</h1>
-          <p>Ми експерти у модних чоловічих стрижках.Працюємо швидко, обережно та зі смаком.</p>
+          <p class="description">Ми експерти у модних чоловічих стрижках.Працюємо швидко, обережно та зі смаком.</p>
         </div>
       </div>
     </section>
@@ -85,8 +85,8 @@
         <div class="about-block">
           <p class="subtitle">про нас</p>
           <h2 class="section-title">Кращий Барбершоп твого міста</h2>
-          <p>Якщо ти хочеш додати у свій образ більше впевненості, тобі точно до нас.</p>
-          <p class="main-descr-p">Ми команда, яка ніколи не зупиняється на досягнутому
+          <p class="description">Якщо ти хочеш додати у свій образ більше впевненості, тобі точно до нас.</p>
+          <p class="about-description-p">Ми команда, яка ніколи не зупиняється на досягнутому
           і прагне змін. І коли ти потрапиш до рук нашого майстра,
           то вже ніколи не зможеш бути тим самим. Ми команда, яка завжди з клієнтами "на одній хвилі". Тому ми завжди готові
           вдосконалити кожного, хто до нас приходить!</p>
@@ -195,7 +195,7 @@
           <li class="master-list-card">
             <img src="./images/masters/john-smith.jpg" alt="фото барбера джон сміт" width="370" height="346">
             <h3 class="master-name" lang="en">John Smith</h3>
-            <p lang="en">Extreme Barber</p>
+            <p lang="en" class="description">Extreme Barber</p>
             <ul class="social-icons-list list">
               <li class="social-icon-list-item">
                 <a href="" class="social-link-icon link">
@@ -230,7 +230,7 @@
           <li class="master-list-card">
             <img src="./images/masters/michele-doe.jpg" alt="фото барбера майкл доу" width="370" height="346">
             <h3 class="master-name" lang="en">Michele Doe</h3>
-            <p lang="en">Extreme Barber</p>
+            <p lang="en" class="description">Extreme Barber</p>
             <ul class="social-icons-list list">
               <li class="social-icon-list-item">
                 <a href="" class="social-link-icon link">
@@ -265,7 +265,7 @@
           <li class="master-list-card">
             <img src="./images/masters/alan-black.jpg" alt="фото барбера алан блек" width="370" height="346">
             <h3 class="master-name" lang="en">Alan Black</h3>
-            <p lang="en">Extreme Barber</p>
+            <p lang="en" class="description">Extreme Barber</p>
             <ul class="social-icons-list list">
               <li class="social-icon-list-item">
                 <a href="" class="social-link-icon link">
@@ -356,7 +356,7 @@
               </ul>
             </address>
             <p class="subtitle">Час роботи</p>
-            <p>Щоденно з 9:00 до 22:00</p>
+            <p class="description">Щоденно з 9:00 до 22:00</p>
           </div>
         </div>
       </div>
@@ -384,7 +384,7 @@
   </footer>
 
 <!--MODAL-->
-<div class="overlay is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button type="button"  class="btn-close" data-modal-close>
       <svg class="btn-close-icon" width="35" height="35">

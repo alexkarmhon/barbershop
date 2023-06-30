@@ -1,0 +1,39 @@
+.hero .container {
+  display: flex;
+  padding: 0;
+}
+
+.hero-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+}
+
+.dark .hero-title {
+  color: var(--dark-theme-main-title);
+}
+
+.hero-left-part {
+  display: flex;
+  align-items: end;
+  width: 115px;
+  padding-left: 42px;
+}
+
+.hero .social-link-list {
+  margin: 0;
+  transform: rotate(-90deg);
+  transform-origin: left top;
+}
+
+.hero-right-part {
+  display: block;
+  align-items: center;
+  width: 1070px;
+  height: 680px;
+  padding-top: 272px;
+  padding-left: 100px;
+  background-image: url(../images/hero/hero_image.jpg);
+}

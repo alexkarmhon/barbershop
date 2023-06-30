@@ -1,0 +1,31 @@
+.main-btn {
+  display: inline-block;
+  min-width: 160px;
+  padding: 12px 20px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  background: none;
+
+  outline: none;
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+
+  transition: background-color 250ms linear, color 250ms linear;
+}
+
+.dark .main-btn,
+.main-btn.dark {
+  color: var(--dark-theme-main-title);
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--dark-theme-main-title);
+  cursor: pointer;
+}

@@ -1,0 +1,9 @@
+.description {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--secondary-text-color);
+}
+
+.dark .description {
+  color: var(--dark-theme-secondary-text);
+}

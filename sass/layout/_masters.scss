@@ -1,0 +1,38 @@
+.masters {
+  background-color: var(--secondary-background-color);
+}
+
+.masters .container {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  flex-direction: column;
+}
+
+.masters .section-title {
+  margin-bottom: 44px;
+}
+
+.master-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.master-list-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.master-list-card>img {
+  margin-bottom: 30px;
+}
+
+.master-name {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}

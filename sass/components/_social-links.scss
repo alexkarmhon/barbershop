@@ -1,0 +1,16 @@
+.social-link-list {
+  display: flex;
+  align-items: center;
+}
+
+.social-link-list::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 40px;
+  background-color: currentColor;
+}
+
+.social-link-item:not(:last-child) {
+  margin-right: 40px;
+}
