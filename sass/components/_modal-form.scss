@@ -14,24 +14,24 @@
 .form-input.light-theme {
   color: var(--main-title-color);
   border-bottom: 1px solid var(--main-title-color);
+
+  &::placeholder {
+    color: var(--main-title-color);
+    background-color: inherit;
+    border-style: none;
+  }
+  
+  &:focus {
+    color: var(--secondary-text-color);
+    border-color: var(--accent-color);
+
+    &::placeholder {
+      color: var(--dark-theme-secondary-text-a);
+    }
+  }
 }
 
 .textarea-form.light-theme {
   color: var(--main-title-color);
   border-bottom: 1px solid var(--main-title-color);
-}
-
-.form-input.light-theme::placeholder {
-  color: var(--main-title-color);
-  background-color: inherit;
-  border-style: none;
-}
-
-.form-input.light-theme:focus {
-  color: var(--secondary-text-color);
-  border-color: var(--accent-color);
-}
-
-.form-input.light-theme:focus::placeholder {
-  color: var(--dark-theme-secondary-text-a);
 }

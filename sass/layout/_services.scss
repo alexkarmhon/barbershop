@@ -25,38 +25,34 @@
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
-}
 
-.price-list>li:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.price-list.left {
-  background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
-}
-
-.price-list.right {
-  background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
-}
-
-.services .main-btn {
-  margin: 0 auto;
-  display: block;
-}
-
-.price-item .value {
-  order: 3;
+  &.left {
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+  
+  &.right {
+    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
 }
 
 .price-item {
   display: flex;
   align-items: baseline;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &::before {
+    content: "";
+    border-bottom: 1px solid rgba(157, 164, 189, 0.12);
+    order: 1;
+    flex-grow: 1;
+    height: 1px;
+  }
 }
 
-.price-item::before {
-  content: "";
-  border-bottom: 1px solid rgba(157, 164, 189, 0.12);
-  order: 1;
-  flex-grow: 1;
-  height: 1px;
+.services .main-btn {
+  margin: 0 auto;
+  display: block;
 }

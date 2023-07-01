@@ -16,16 +16,19 @@
   border-radius: 25px;
 
   transition: background-color 250ms linear, color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--dark-theme-main-title);
+    cursor: pointer;
+  }
+
+  &.dark {
+    color: var(--dark-theme-main-title);
+  }
 }
 
-.dark .main-btn,
-.main-btn.dark {
+.dark .main-btn{
   color: var(--dark-theme-main-title);
-}
-
-.main-btn:hover,
-.main-btn:focus {
-  background-color: var(--accent-color);
-  color: var(--dark-theme-main-title);
-  cursor: pointer;
 }

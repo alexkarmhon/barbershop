@@ -18,10 +18,10 @@
   padding-bottom: 130px;
   padding-left: 15px;
   padding-right: 40px;
-}
 
-.form-section>.section-title {
-  margin-bottom: 44px;
+  & > .section-title {
+    margin-bottom: 44px;
+  }
 }
 
 .booking-form-container {
@@ -44,21 +44,21 @@
   outline: none;
   border-style: none;
   border-bottom: 1px solid var(--dark-theme-secondary-text-a);
-}
 
-.form-input::placeholder {
-  color: var(--dark-theme-secondary-text-a);
-  background-color: inherit;
-  border-style: none;
-}
+  &::placeholder {
+    color: var(--dark-theme-secondary-text-a);
+    background-color: inherit;
+    border-style: none;
+  }
+  
+  &:focus {
+    color: var(--dark-theme-main-title);
+    border-color: var(--dark-theme-main-title);
 
-.form-input:focus {
-  color: var(--dark-theme-main-title);
-  border-color: var(--dark-theme-main-title);
-}
-
-.form-input:focus::placeholder {
-  color: var(--dark-theme-main-title);
+    &::placeholder {
+        color: var(--dark-theme-main-title);
+      }
+  }
 }
 
 .textarea-form {
@@ -75,27 +75,27 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
 
-.contacts-section>.section-title {
-  margin-bottom: 40px;
-}
-
-.contacts-section>.subtitle {
-  color: var(--dark-theme-main-title);
+  & > .section-title {
+    margin-bottom: 40px;
+  }
+  
+  & > .subtitle {
+    color: var(--dark-theme-main-title);
+  }
 }
 
 .adress-list {
   margin-bottom: 70px;
 }
 
-.adress-list>.adress-list-item {
+.adress-list-item {
   display: flex;
   margin-bottom: 20px;
-}
 
-.adress-list-item>.link {
-  align-items: center;
+  & > .link {
+    align-items: center;
+  }
 }
 
 .adress-list-icon {
@@ -104,8 +104,10 @@
   stroke: var(--dark-theme-secondary-text);
 
   transition: stroke 250ms linear;
-}
 
-.contacts-section>.subtitle {
-  color: var(--dark-theme-main-title);
+  .link:hover &,
+  .link:focus & {
+    stroke: var(--accent-color);
+    cursor: pointer;
+  }
 }

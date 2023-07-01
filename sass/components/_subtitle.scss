@@ -8,17 +8,17 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--main-title-color);
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+    background-color: currentColor;
+  }
 }
 
 .dark .subtitle {
   color: var(--dark-theme-secondary-text-a);
-}
-
-.subtitle::before {
-  content: "";
-  display: inline-block;
-  width: 60px;
-  height: 1px;
-  margin-right: 20px;
-  background-color: currentColor;
 }

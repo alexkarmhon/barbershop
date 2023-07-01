@@ -42,11 +42,12 @@
   transform: scale(1);
 
   transition: transform 250ms linear;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
-.logo:hover {
-  transform: scale(1.2);
-}
 
 
 .tel-link {

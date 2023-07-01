@@ -20,22 +20,17 @@ section {
   outline: none;
 
   transition: color 250ms linear;
+
+  &.dark {
+      color: var(--dark-theme-main-title);
+    }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    cursor: pointer;
+  }
 }
-
-.link.dark {
-  color: var(--dark-theme-main-title);
-}
-
-.link:hover,
-.link:focus,
-.link:hover .adress-list-icon,
-.link:focus .adress-list-icon {
-  color: var(--accent-color);
-  stroke: var(--accent-color);
-  cursor: pointer;
-}
-
-
 
 .list {
   list-style: none;
