@@ -9,6 +9,10 @@
   text-transform: uppercase;
   color: var(--main-title-color);
 
+  &.dark {
+    color: var(--dark-theme-secondary-text-a);
+  }
+
   &::before {
     content: "";
     display: inline-block;
@@ -17,8 +21,4 @@
     margin-right: 20px;
     background-color: currentColor;
   }
-}
-
-.dark .subtitle {
-  color: var(--dark-theme-secondary-text-a);
 }

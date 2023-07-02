@@ -1,13 +1,16 @@
-.galery .container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 130px;
-  padding-bottom: 130px;
+.galery {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+
+  .subtitle {
+    margin-bottom: 44px;
+  }
 }
 
-.galery .subtitle {
-  margin-bottom: 44px;
-}
 
 .fotogalery {
   display: flex;

@@ -33,12 +33,13 @@
 
 .btn-close-icon {
   transition: fill 250ms linear;
+
+  .btn-close:hover &,
+  .btn-close:focus & {
+    fill: var(--accent-color);
+  }
 }
 
-.btn-close:hover>.btn-close-icon,
-.btn-close:focus>.btn-close-icon {
-  fill: var(--accent-color);
-}
 
 .is-hidden {
   opacity: 0;

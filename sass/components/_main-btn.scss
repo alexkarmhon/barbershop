@@ -17,18 +17,14 @@
 
   transition: background-color 250ms linear, color 250ms linear;
 
+  &.dark {
+      color: var(--dark-theme-main-title);
+    }
+
   &:hover,
   &:focus {
     background-color: var(--accent-color);
     color: var(--dark-theme-main-title);
     cursor: pointer;
   }
-
-  &.dark {
-    color: var(--dark-theme-main-title);
-  }
-}
-
-.dark .main-btn{
-  color: var(--dark-theme-main-title);
 }

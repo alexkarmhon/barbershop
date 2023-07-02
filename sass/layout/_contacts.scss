@@ -2,14 +2,14 @@
   background-image: url(../images/contacts/Bg.png), linear-gradient(to right, rgba(25, 28, 38, 1), rgba(25, 28, 38, 1));
   background-position: 100% 50%;
   background-repeat: no-repeat;
+
+  .container {
+    display: flex;
+  }
 }
 
 .contacts-container {
   width: 100%;
-}
-
-.contacts .container {
-  display: flex;
 }
 
 .form-section {
@@ -76,11 +76,11 @@
   background-size: cover;
   background-position: center;
 
-  & > .section-title {
+  .section-title {
     margin-bottom: 40px;
   }
   
-  & > .subtitle {
+  .subtitle {
     color: var(--dark-theme-main-title);
   }
 }
@@ -93,7 +93,7 @@
   display: flex;
   margin-bottom: 20px;
 
-  & > .link {
+  .link {
     align-items: center;
   }
 }

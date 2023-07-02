@@ -1,21 +1,25 @@
-.advantages .container {
-  display: flex;
-  padding-top: 130px;
-  padding-bottom: 130px;
+.advantages {
+  .container {
+    display: flex;
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+
+  &__left {
+    width: calc((100% - 30px) / 2);
+    margin-left: 0;
+    padding: 0 65px;
+  }
+  
+  &__right {
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 0;
+    padding-left: 30px;
+    margin-right: 0;
+  }
 }
 
-.our-advantages.left {
-  width: calc((100% - 30px) / 2);
-  margin-left: 0;
-  padding: 0 65px;
-}
 
-.our-advantages.right {
-  width: calc((100% - 30px) / 2);
-  margin-bottom: 0;
-  padding-left: 30px;
-  margin-right: 0;
-}
 
 .advantages-list {
   display: flex;

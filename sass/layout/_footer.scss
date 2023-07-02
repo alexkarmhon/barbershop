@@ -2,22 +2,22 @@
   display: flex;
   align-items: center;
   width: 100%;
-}
 
-.footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 56px 15px;
-}
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 15px;
+  }
+
+  .social-link-item>.link {
+    margin-bottom: 0;
+    padding: 0;
+  }
+} 
 
 .copyright {
   display: flex;
   align-items: center;
   margin: 0;
-}
-
-.footer .social-link-item>.link {
-  margin-bottom: 0;
-  padding: 0;
 }

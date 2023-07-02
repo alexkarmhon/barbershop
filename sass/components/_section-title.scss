@@ -7,8 +7,8 @@
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--title-color);
-}
 
-.dark .section-title {
-  color: var(--dark-theme-main-title);
+  &.dark {
+    color: var(--dark-theme-main-title);
+  }
 }
