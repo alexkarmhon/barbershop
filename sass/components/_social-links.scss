@@ -1,4 +1,4 @@
-.social-link-list {
+.social-networks-list {
   display: flex;
   align-items: center;
 
@@ -9,8 +9,17 @@
     margin-right: 40px;
     background-color: currentColor;
     }
+    
+  .hero & {
+    margin: 0;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+  }
 }
 
-.social-link-item:not(:last-child) {
-  margin-right: 40px;
+
+.social-networks-list__item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
 }

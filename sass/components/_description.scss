@@ -2,8 +2,16 @@
   margin-top: 0;
   margin-bottom: 20px;
   color: var(--secondary-text-color);
+  
+  &--text {
+    margin-bottom: 65px;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+  }
+  
+  &--dark {
+    color: var(--dark-theme-secondary-text);
+  }  
 }
 
-.description.dark{
-  color: var(--dark-theme-secondary-text);
-}

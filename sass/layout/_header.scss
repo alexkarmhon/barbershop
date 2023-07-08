@@ -3,14 +3,6 @@
   display: flex;
   align-items: center;
   width: 100%;
-
-  .container {
-    display: flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    background-color: unset;
-  }
 } 
 
 .nav-bar {
@@ -29,26 +21,13 @@
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.1em;
-}
 
-.nav-list-item {
-  display: flex;
-  justify-content: center;
-  margin-right: 40px;
-}
-
-.logo {
-  outline: none;
-  transform: scale(1);
-
-  transition: transform 250ms linear;
-
-  &:hover {
-    transform: scale(1.2);
+  &__item {
+    display: flex;
+    justify-content: center;
+    margin-right: 40px;
   }
 }
-
-
 
 .tel-link {
   margin-left: auto;

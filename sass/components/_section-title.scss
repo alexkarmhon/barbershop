@@ -8,7 +8,19 @@
   letter-spacing: 0.05em;
   color: var(--title-color);
 
-  &.dark {
+  &--dark {
     color: var(--dark-theme-main-title);
+  }
+
+  .services & {
+    margin-bottom: 44px;
+  }
+
+  .form-section & {
+    margin-bottom: 44px;
+  }
+
+  .contacts-section & {
+    margin-bottom: 40px;
   }
 }

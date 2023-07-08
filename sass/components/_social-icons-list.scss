@@ -4,8 +4,10 @@
   justify-content: center;
 }
 
-.social-icon-list-item:not(:last-child) {
-  margin-right: 10px;
+.social-icon-list__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social-icon {
@@ -15,14 +17,14 @@
 
   transition: fill 250ms linear;
 
-  .social-link-icon:hover &,
-  .social-link-icon:focus & {
+  .social-icon-link:hover &,
+  .social-icon-link:focus & {
     outline: none;
     fill: var(--accent-color);
   }
 }
 
-.social-link-icon {
+.social-icon-link {
   display: flex;
   align-items: center;
   width: 44px;

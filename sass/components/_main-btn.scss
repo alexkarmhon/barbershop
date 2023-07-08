@@ -17,7 +17,7 @@
 
   transition: background-color 250ms linear, color 250ms linear;
 
-  &.dark {
+  &--dark {
       color: var(--dark-theme-main-title);
     }
 
@@ -26,5 +26,10 @@
     background-color: var(--accent-color);
     color: var(--dark-theme-main-title);
     cursor: pointer;
+  }
+
+  .services & {
+    margin: 0 auto;
+    display: block;
   }
 }

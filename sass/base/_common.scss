@@ -21,7 +21,7 @@ section {
 
   transition: color 250ms linear;
 
-  &.dark {
+  &--dark {
       color: var(--dark-theme-main-title);
     }
 
@@ -58,8 +58,4 @@ ol {
 
 img {
   display: block;
-}
-
-.dark {
-  color: var(--dark-theme-secondary-text);
 }
