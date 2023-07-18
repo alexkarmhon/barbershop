@@ -28,8 +28,13 @@
     cursor: pointer;
   }
 
+  .header & {
+    display: none;
+  }
+
   .services & {
     margin: 0 auto;
     display: block;
   }
 }
+

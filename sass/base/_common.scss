@@ -9,7 +9,8 @@ body {
 }
 
 section {
-  width: 1280px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -21,9 +22,9 @@ section {
 
   transition: color 250ms linear;
 
-  &--dark {
-      color: var(--dark-theme-main-title);
-    }
+  // &--dark {
+  //     color: var(--dark-theme-main-title);
+  //   }
 
   &:hover,
   &:focus {

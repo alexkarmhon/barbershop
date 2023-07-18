@@ -1,58 +1,87 @@
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  outline: 1px solid red;
 
   .header & {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    background-color: unset;
-  }
-
-  .hero & {
-    display: flex;
-    padding: 0;
-  }
-
-  .about &, .advantages & {
-    display: flex;
-    padding-top: 130px;
-    padding-bottom: 130px;
-  }
-
-  .services & {
-    display: block;
-    padding-top: 130px;
-    padding-bottom: 130px;
-    background: none;
-  }
-
-  .masters & {
-      padding-top: 130px;
-      padding-bottom: 130px;
-      flex-direction: column;
-    }
-
-  .galery & {
-    display: flex;
-    flex-direction: column;
-    padding-top: 130px;
-    padding-bottom: 130px;
-  }
-
-  .contacts & {
-    display: flex;
-  }
-
-  .footer & {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 56px 15px;
   }
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 448px;
+    margin: 0 auto;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+// .container {
+//   width: 1200px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   margin: 0 auto;
+
+//   .header & {
+//     display: flex;
+//     align-items: center;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+//     background-color: unset;
+//   }
+
+//   .hero & {
+//     display: flex;
+//     padding: 0;
+//   }
+
+//   .about &, .advantages & {
+//     display: flex;
+//     padding-top: 130px;
+//     padding-bottom: 130px;
+//   }
+
+//   .services & {
+//     display: block;
+//     padding-top: 130px;
+//     padding-bottom: 130px;
+//     background: none;
+//   }
+
+//   .masters & {
+//       padding-top: 130px;
+//       padding-bottom: 130px;
+//       flex-direction: column;
+//     }
+
+//   .galery & {
+//     display: flex;
+//     flex-direction: column;
+//     padding-top: 130px;
+//     padding-bottom: 130px;
+//   }
+
+//   .contacts & {
+//     display: flex;
+//   }
+
+//   .footer & {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 56px 15px;
+//   }
+// }

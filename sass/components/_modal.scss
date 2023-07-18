@@ -15,20 +15,19 @@
 
 .btn-close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 48px;
+  right: 31px;
 
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2px;
 
-  transform: translate(30%, -30%);
+  // transform: translate(30%, -30%);
 
   outline: none;
   border-style: none;
-  background-color: var(--dark-theme-secondary-text-a);
-  border-radius: 50%;
+  background-color: inherit;
 }
 
 .btn-close-icon {

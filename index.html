@@ -23,7 +23,9 @@
       <!-- панель навігації -->
       <nav class="nav-bar">
         <a href="./index.html" class="logo">
-          <img src="./images/header/logo.svg" alt="logotype">
+          <svg class="logo-img">
+            <use href="./images/icons/symbol-defs.svg#icon-logo"></use>
+          </svg>
         </a>
         <ul class="nav-list list">
           <li class="nav-list__item">
@@ -43,12 +45,17 @@
       <!-- панель звязку -->
       <a href="tel:+380441111111" type="tel" class="tel-link link link--dark">+38 044 111 11 11</a>
       <button type="button" class="main-btn main-btn--dark" data-modal-open>Онлайн-запис</button>
+      <button type="button" class="burger-btn">
+        <svg class="burger-btn-icon" width="40" height="40">
+          <use href="./images/icons/symbol-defs.svg#icon-burger-menu"></use>
+        </svg>
+      </button>
     </div>
   </header>
 
   <main>
     <!-- HERO -->
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="container">
         <div class="hero-left-part">
           <ul class="social-networks-list list">
@@ -66,10 +73,9 @@
           <p class="description description--dark">Ми експерти у модних чоловічих стрижках.Працюємо швидко, обережно та зі смаком.</p>
         </div>
       </div>
-    </section>
-
+    </section> -->
     <!-- ABOUT -->
-    <section class="about" id="about">
+    <!-- <section class="about" id="about">
       <div class="container">
         <div class="about-block">
           <ul class="about-list list">
@@ -101,10 +107,10 @@
           <button type="button" class="main-btn" data-modal-open>Онлайн-запис</button>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- SERVICES -->
-    <section class="services" id="price">
+    <!-- <section class="services" id="price">
       <div class="container">
         <p class="subtitle subtitle--dark">Проведи час у компанії кращих майстрів</p>
         <h2 class="section-title section-title--dark">Послуги та ціни</h2>
@@ -144,10 +150,9 @@
         <button type="button" class="main-btn main-btn--dark" data-modal-open>Онлайн-запис</button>
 
       </div>
-    </section>
-
+    </section> -->
     <!-- ADVANTAGES -->
-    <section class="advantages">
+    <!-- <section class="advantages">
       <div class="container">
         <div class="advantages__left">
           <ul class="advantages-list list">
@@ -194,10 +199,9 @@
           <p>Про нас говорять лише добре. Але краще 1 раз побачити та відчути, ніж 10 разів прочитати.</p>
         </div>
       </div>
-    </section>
-
+    </section> -->
     <!-- MASTERS -->
-    <section class="masters" id="masters">
+    <!-- <section class="masters" id="masters">
       <div class="container">
         <p class="subtitle">для справжніх поціновувачів атмосфери</p>
         <h2 class="section-title">Наші майстри</h2>
@@ -324,9 +328,9 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!-- GALERY -->
-    <section class="galery">
+    <!-- <section class="galery">
       <div class="container">
         <p class="subtitle">Латинською мовою "барба" означає "борода"</p>
         <h2 class="section-title visually-hidden">Наші рорботи</h2>
@@ -365,9 +369,9 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!-- CONTACTS -->
-    <section class="contacts" id="contacts">
+    <!-- <section class="contacts" id="contacts">
       <div class="container">
         <div class="form-section">
           <h2 class="section-title section-title--dark">Онлайн-запис</h2>
@@ -411,12 +415,12 @@
           <p class="description description--dark">Щоденно з 9:00 до 22:00</p>
         </div>
       </div>
-    </section>
-    
+    </section> -->
+  </main>
     
   
   <!-- ПІДВАЛ -->
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
       
       <p class="copyright">&copy; Copyright 2020</p>
@@ -432,13 +436,13 @@
         </ul>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
 <!--MODAL-->
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button type="button"  class="btn-close" data-modal-close>
-      <svg class="btn-close-icon" width="35" height="35">
+      <svg class="btn-close-icon" width="40" height="40">
         <use href="./images/icons/symbol-defs.svg#icon-close"></use>
       </svg>
     </button>
