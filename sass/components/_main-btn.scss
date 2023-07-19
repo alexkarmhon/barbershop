@@ -32,6 +32,12 @@
     display: none;
   }
 
+  .mobile-menu & {
+    display: block;
+    min-width: 194px;
+    margin-bottom: 64px;
+  }
+
   .services & {
     margin: 0 auto;
     display: block;

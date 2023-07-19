@@ -3,6 +3,9 @@
 @import "./base/common";
 @import "./base/container";
 
+
+@import "./components/backdrop";
+@import "./components/mobile-menu";
 @import "./components/main-btn";
 @import "./components/social-links.scss";
 @import "./components/description";
@@ -20,6 +23,5 @@
 @import "./layout/galery";
 @import "./layout/contacts";
 @import "./layout/footer";
-@import "./components/backdrop";
 @import "./components/modal";
 @import "./components/modal-form";

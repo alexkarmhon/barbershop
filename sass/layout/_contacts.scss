@@ -13,12 +13,16 @@
 }
 
 .booking-form-container {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
+
 .form-input {
-  width: calc((100% - 30px) / 2);
+  width: 100%;
   margin-bottom: 44px;
   background-color: inherit;
   font-weight: 600;
@@ -46,6 +50,10 @@
     &::placeholder {
         color: var(--dark-theme-main-title);
       }
+  }
+
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 30px) / 2);
   }
 }
 

@@ -1,0 +1,64 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 337px;
+  height: 100vh;
+  padding: 118px 40px;
+
+  color: var(--main-title-color);
+  
+  font-family: var(--main-font);
+  font-weight: 600;
+  
+  background-color: var(--body-background-color);
+  
+  .tel-link {
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.333px;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+  }
+  
+  .social-networks-list {
+    position: relative;
+    left: 105px;
+    display: block;
+    
+    &__item {
+      margin-bottom: 24px;
+    }
+    
+    &::before {
+      position: absolute;
+      left: -100px;
+      top: 0;
+      display: inline-block;
+    }
+  }
+
+  .social-network__link {
+    font-size: 14px;
+    line-height: 1.357px;
+    letter-spacing: 0.2em;
+  }
+}
+
+  
+
+  .mobile-menu-list {
+    margin-bottom: 64px;
+
+    &__item {
+      
+      font-size: 18px;
+      line-height: 1.333;
+      letter-spacing: 0.1em;
+      
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+  }  
