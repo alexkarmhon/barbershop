@@ -1,12 +1,17 @@
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 
   .header & {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .hero & {
+    outline: 1px solid red;
   }
 }
 
@@ -20,6 +25,10 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 720px;
+    .hero & {
+      display: flex;
+      padding: 0;
+    }
   }
 }
 
