@@ -4,14 +4,13 @@
 
   .header & {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 40px;
   }
 
   .hero & {
-    outline: 1px solid red;
+    outline: 1px solid tomato;
   }
 }
 
@@ -25,16 +24,26 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 720px;
+    .header & {
+      padding-left: 15px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
     .hero & {
+      width: 768px;
       display: flex;
-      padding: 0;
+      padding-right: 0;
     }
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container {
     width: 1200px;
+    .hero & {
+      width: 1200px;
+      padding: 0;
+    }    
   }
 }
 

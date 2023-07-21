@@ -1,6 +1,10 @@
 .description {
   margin-top: 0;
   margin-bottom: 20px;
+
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   
   &--text {
@@ -14,4 +18,5 @@
     color: var(--dark-theme-secondary-text);
   }  
 }
+
 
