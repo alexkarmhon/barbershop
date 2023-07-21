@@ -9,16 +9,11 @@
     padding-bottom: 40px;
   }
 
-  .hero & {
-    outline: 1px solid tomato;
-  }
-
   .about & {
     padding-top: 84px;
     padding-bottom: 84px    
   }
 }
-
 
 @media screen and (min-width: 480px) {
   .container {
@@ -40,6 +35,11 @@
       display: flex;
       padding-right: 0;
     }
+    .about & {
+      display: flex;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
   }
 }
 
@@ -49,9 +49,15 @@
     .hero & {
       width: 1200px;
       padding: 0;
-    }    
+    }
+    .about & {
+      display: flex;
+      padding-top: 130px;
+      padding-bottom: 130px;
+    }
   }
 }
+
 
 // .container {
 //   width: 1200px;

@@ -1,26 +1,58 @@
 .section-title {
+  width: 330px;
+  margin-top: 0;
   margin-bottom: 20px;
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 42px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.142;
   letter-spacing: 0.05em;
   color: var(--title-color);
 
   &--dark {
     color: var(--dark-theme-main-title);
   }
+}
 
-  .services & {
-    margin-bottom: 44px;
-  }
-
-  .form-section & {
-    margin-bottom: 44px;
-  }
-
-  .contacts-section & {
-    margin-bottom: 40px;
+@media screen and (min-width: 1280px) {
+  .section-title {
+    width: 500px;
+    font-size: 42px;
+    line-height: 1.16;
   }
 }
+
+
+
+
+
+// .section-title {
+//   margin-bottom: 20px;
+//   font-family: var(--secondary-font);
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 42px;
+//   line-height: 1.16;
+//   letter-spacing: 0.05em;
+//   color: var(--title-color);
+
+  // &--dark {
+  //   color: var(--dark-theme-main-title);
+  // }
+
+//   .services & {
+//     margin-bottom: 44px;
+//   }
+
+//   .form-section & {
+//     margin-bottom: 44px;
+//   }
+
+//   .contacts-section & {
+//     margin-bottom: 40px;
+//   }
+// }
+
+
+

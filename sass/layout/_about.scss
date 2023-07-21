@@ -2,6 +2,61 @@
   display: none;
 }
 
+.about-text-box {
+  width: 418px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-list {
+    display: block;
+    
+    &__item {
+      &:first-child {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .about-block {
+    &+& {
+      margin-left: 30px;
+    }
+  }
+
+  .about-text-box {
+    width: 330px;
+    margin-bottom: 85px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-list {
+    display: flex;
+
+    &__item {
+      &+& {
+        margin-left: 30px;
+      }
+
+      &:first-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .about-block {
+    &+& {
+      margin-left: 64px;
+    }
+  }
+  .about-text-box {
+    width: 500px;
+    margin-bottom: 75px;
+  }
+}
+
+
 
 // .about-list {
 //   display: flex;

@@ -89,9 +89,6 @@ img {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.hero .container {
-  outline: 1px solid tomato;
-}
 .about .container {
   padding-top: 84px;
   padding-bottom: 84px;
@@ -117,6 +114,11 @@ img {
     display: flex;
     padding-right: 0;
   }
+  .about .container {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .container {
@@ -125,6 +127,11 @@ img {
   .hero .container {
     width: 1200px;
     padding: 0;
+  }
+  .about .container {
+    display: flex;
+    padding-top: 130px;
+    padding-bottom: 130px;
   }
 }
 .backdrop {
@@ -262,9 +269,8 @@ img {
   color: var(--secondary-text-color);
 }
 .description--text {
-  margin-bottom: 65px;
   font-size: 14px;
-  line-height: 1.86;
+  line-height: 1.857;
   letter-spacing: 0.02em;
 }
 .description--dark {
@@ -272,28 +278,28 @@ img {
 }
 
 .section-title {
+  width: 330px;
+  margin-top: 0;
   margin-bottom: 20px;
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 42px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.142;
   letter-spacing: 0.05em;
   color: var(--title-color);
 }
 .section-title--dark {
   color: var(--dark-theme-main-title);
 }
-.services .section-title {
-  margin-bottom: 44px;
-}
-.form-section .section-title {
-  margin-bottom: 44px;
-}
-.contacts-section .section-title {
-  margin-bottom: 40px;
-}
 
+@media screen and (min-width: 1280px) {
+  .section-title {
+    width: 500px;
+    font-size: 42px;
+    line-height: 1.16;
+  }
+}
 .subtitle {
   display: flex;
   align-items: center;
@@ -568,6 +574,44 @@ img {
   display: none;
 }
 
+.about-text-box {
+  width: 418px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-list {
+    display: block;
+  }
+  .about-list__item:first-child {
+    margin-bottom: 30px;
+  }
+  .about-block + .about-block {
+    margin-left: 30px;
+  }
+  .about-text-box {
+    width: 330px;
+    margin-bottom: 85px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-list {
+    display: flex;
+  }
+  .about-list__item + .about-list__item {
+    margin-left: 30px;
+  }
+  .about-list__item:first-child {
+    margin-bottom: 0;
+  }
+  .about-block + .about-block {
+    margin-left: 64px;
+  }
+  .about-text-box {
+    width: 500px;
+    margin-bottom: 75px;
+  }
+}
 .services {
   background-color: #111319;
   background-image: url(../images/services/services-png.png);
