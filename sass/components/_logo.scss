@@ -8,3 +8,13 @@
     transform: scale(1.2);
   }
 }
+
+.logo-img {
+  width: 69px;
+  height: 56px;
+  fill: #fff;
+
+  &--dark {
+    fill: var(--main-title-color);
+  }
+}
