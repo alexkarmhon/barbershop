@@ -12,7 +12,13 @@
   .hero & {
     outline: 1px solid tomato;
   }
+
+  .about & {
+    padding-top: 84px;
+    padding-bottom: 84px    
+  }
 }
+
 
 @media screen and (min-width: 480px) {
   .container {

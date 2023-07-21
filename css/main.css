@@ -92,6 +92,10 @@ img {
 .hero .container {
   outline: 1px solid tomato;
 }
+.about .container {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
 
 @media screen and (min-width: 480px) {
   .container {
@@ -561,14 +565,7 @@ img {
   }
 }
 .about-list {
-  display: flex;
-}
-.about-list__item + .about-list__item {
-  margin-left: 30px;
-}
-
-.about-block + .about-block {
-  margin-left: 64px;
+  display: none;
 }
 
 .services {

@@ -1,15 +1,20 @@
 .about-list {
-  display: flex;
-
-  &__item {
-    &+& {
-      margin-left: 30px;
-    }
-  }
+  display: none;
 }
 
-.about-block {
-  &+& {
-    margin-left: 64px;
-  }
-}
+
+// .about-list {
+//   display: flex;
+
+//   &__item {
+//     &+& {
+//       margin-left: 30px;
+//     }
+//   }
+// }
+
+// .about-block {
+//   &+& {
+//     margin-left: 64px;
+//   }
+// }
