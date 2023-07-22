@@ -56,6 +56,10 @@
       padding-top: 130px;
       padding-bottom: 130px;
     }
+    .advantages & {
+      display: flex;
+      flex-direction: row-reverse;
+    }
   }
 }
 
