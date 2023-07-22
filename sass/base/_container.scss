@@ -2,8 +2,8 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 31px;
+  padding-right: 31px;
 
   .header & {
     display: flex;
@@ -17,16 +17,15 @@
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 448px;
+    width: 480px;
     margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 720px;
+    width: 768px;
     .header & {
-      padding-left: 15px;
       padding-top: 32px;
       padding-bottom: 32px;
     }
@@ -44,6 +43,10 @@
 @media screen and (min-width: 1280px) {
   .container {
     width: 1200px;
+    .header & {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
     .hero & {
       width: 1200px;
       padding: 0;
