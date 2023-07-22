@@ -33,12 +33,6 @@ body {
   font-weight: 400;
 }
 
-section {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
 .link {
   display: flex;
   color: inherit;
@@ -79,7 +73,27 @@ img {
   display: block;
 }
 
+section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
 .container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -88,10 +102,6 @@ img {
   justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 40px;
-}
-.about .container {
-  padding-top: 84px;
-  padding-bottom: 84px;
 }
 
 @media screen and (min-width: 480px) {
@@ -116,8 +126,6 @@ img {
   }
   .about .container {
     display: flex;
-    padding-top: 100px;
-    padding-bottom: 100px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -278,7 +286,7 @@ img {
 }
 
 .section-title {
-  width: 330px;
+  max-width: 500px;
   margin-top: 0;
   margin-bottom: 20px;
   font-family: var(--secondary-font);
@@ -295,7 +303,6 @@ img {
 
 @media screen and (min-width: 1280px) {
   .section-title {
-    width: 500px;
     font-size: 42px;
     line-height: 1.16;
   }
@@ -482,6 +489,10 @@ img {
   .contact-panel .tel-link {
     margin-right: 40px;
   }
+}
+.hero {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .hero-title {
   margin-bottom: 20px;

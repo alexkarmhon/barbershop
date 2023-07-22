@@ -8,24 +8,19 @@ body {
   font-weight: 400;
 }
 
-section {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
 
 .link {
   display: flex;
   color: inherit;
   text-decoration: none;
   outline: none;
-
+  
   transition: color 250ms linear;
-
+  
   // &--dark {
-  //     color: var(--dark-theme-main-title);
-  //   }
-
+    //     color: var(--dark-theme-main-title);
+    //   }
+    
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -59,4 +54,17 @@ ol {
 
 img {
   display: block;
+}
+
+section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
