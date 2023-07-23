@@ -2,6 +2,61 @@
   background-color: var(--secondary-background-color);
 }
 
+.master-foto {
+  margin-bottom: 30px;
+}
+
+.master-name {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.333;
+  letter-spacing: 0.02em;
+}
+
+.master-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.357;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.masters-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 64px;
+  } 
+
+@media screen and (max-width: 767px) {
+
+  .master-foto {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .masters-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+    
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: calc((100% - 90px)/3);
+      margin-right: 30px;
+      margin-bottom: 30px;
+    } 
+  }
+
+  .master-name {
+    line-height: 1.67;
+  }
+}
 
 
 // .masters {

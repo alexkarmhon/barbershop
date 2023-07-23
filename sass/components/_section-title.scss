@@ -13,6 +13,10 @@
   &--dark {
     color: var(--dark-theme-main-title);
   }
+
+  @media screen and (max-width: 479px) {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -26,7 +30,8 @@
   .section-title {
     font-size: 42px;
     line-height: 1.166;
-    .services & {
+    .services &,
+    .masters & {
       margin-bottom: 44px;
     }
   }

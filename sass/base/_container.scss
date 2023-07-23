@@ -11,6 +11,11 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
+  .masters {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 
@@ -39,12 +44,19 @@
     .about & {
       display: flex;
     }
+    .masters & {
+      @media screen and (max-width: 1279px) {
+        max-width: 540px;
+      }
+    }
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
     .header & {
       padding-left: 15px;
       padding-right: 15px;

@@ -109,6 +109,10 @@ section {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+.container .masters {
+  display: flex;
+  flex-direction: column;
+}
 
 @media screen and (min-width: 480px) {
   .container {
@@ -135,9 +139,16 @@ section {
     display: flex;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .masters .container {
+    max-width: 540px;
+  }
+}
 @media screen and (min-width: 1280px) {
   .container {
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .header .container {
     padding-left: 15px;
@@ -315,6 +326,11 @@ section {
 .section-title--dark {
   color: var(--dark-theme-main-title);
 }
+@media screen and (max-width: 479px) {
+  .section-title {
+    text-align: center;
+  }
+}
 
 @media screen and (min-width: 480px) {
   .section-title {
@@ -327,7 +343,7 @@ section {
     font-size: 42px;
     line-height: 1.166;
   }
-  .services .section-title {
+  .services .section-title, .masters .section-title {
     margin-bottom: 44px;
   }
 }
@@ -851,6 +867,57 @@ section {
   background-color: var(--secondary-background-color);
 }
 
+.master-foto {
+  margin-bottom: 30px;
+}
+
+.master-name {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.333;
+  letter-spacing: 0.02em;
+}
+
+.master-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.357;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.masters-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+@media screen and (max-width: 767px) {
+  .master-foto {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .masters-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+  .masters-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc((100% - 90px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .master-name {
+    line-height: 1.67;
+  }
+}
 .fotogalery {
   display: flex;
   flex-wrap: wrap;
