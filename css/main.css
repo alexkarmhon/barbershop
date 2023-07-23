@@ -31,6 +31,9 @@ body {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
+  font-size: 18px;
+  line-height: 1.666;
+  letter-spacing: 0.02em;
 }
 
 .link {
@@ -76,15 +79,18 @@ img {
 section {
   padding-top: 84px;
   padding-bottom: 84px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   section {
+    max-width: 768px;
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
 @media screen and (min-width: 1280px) {
   section {
+    max-width: 1280px;
     padding-top: 130px;
     padding-bottom: 130px;
   }
@@ -113,6 +119,8 @@ section {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .header .container {
     padding-top: 32px;
@@ -308,10 +316,16 @@ section {
   color: var(--dark-theme-main-title);
 }
 
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 42px;
+    line-height: 1.166;
+  }
+}
 @media screen and (min-width: 1280px) {
   .section-title {
     font-size: 42px;
-    line-height: 1.16;
+    line-height: 1.166;
   }
   .services .section-title {
     margin-bottom: 44px;
@@ -530,8 +544,6 @@ section {
   .hero-left-part {
     display: none;
   }
-}
-@media screen and (max-width: 767px) {
   .hero-right-part {
     display: block;
     align-items: center;
@@ -539,8 +551,6 @@ section {
     height: 580px;
     padding-top: 208px;
   }
-}
-@media screen and (max-width: 767px) {
   .hero-text-box {
     width: 306px;
     height: 78px;
@@ -641,7 +651,9 @@ section {
 .services {
   background-color: #111319;
   background-image: url(../images/services/services-mobile/price-mobile.png);
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 @media screen and (min-resolution: 2dppx) {
   .services {
@@ -810,35 +822,33 @@ section {
   position: absolute;
 }
 
+@media screen and (min-width: 768px) {
+  .advantages__decor {
+    width: 500px;
+    margin-left: auto;
+  }
+  .advantages__descr {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .advantages__decor {
+    width: calc((100% - 30px) / 2);
+    margin-left: 0;
+    padding: 0 65px;
+  }
+  .advantages__descr {
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 0;
+    padding-left: 30px;
+    margin-right: 0;
+  }
+  .advantages-list__item {
+    width: calc(50% - 30px);
+  }
+}
 .masters {
   background-color: var(--secondary-background-color);
-}
-.masters .section-title {
-  margin-bottom: 44px;
-}
-
-.masters-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
-}
-.masters-list__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.master-foto {
-  margin-bottom: 30px;
-}
-
-.master-name {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
 }
 
 .fotogalery {

@@ -15,10 +15,17 @@
   }
 }
 
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 42px;
+    line-height: 1.166;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .section-title {
     font-size: 42px;
-    line-height: 1.16;
+    line-height: 1.166;
     .services & {
       margin-bottom: 44px;
     }
