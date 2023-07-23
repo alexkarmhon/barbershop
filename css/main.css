@@ -160,8 +160,8 @@ section {
   }
   .about .container {
     display: flex;
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .advantages .container {
     display: flex;
