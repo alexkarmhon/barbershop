@@ -17,6 +17,10 @@
   @media screen and (max-width: 479px) {
     text-align: center;
   }
+
+  .contacts & {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 480px) {

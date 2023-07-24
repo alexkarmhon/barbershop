@@ -74,6 +74,11 @@
       display: flex;
       flex-direction: row-reverse;
     }
+    .contacts & {
+      width: initial;
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
 
