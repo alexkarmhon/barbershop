@@ -1072,11 +1072,11 @@ section {
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .contacts-part {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
-  .adress {
+  .adress, .time {
     width: 330px;
-    margin-right: 30px;
   }
 }
 @media screen and (min-width: 1280px) {
