@@ -6,9 +6,12 @@ body {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.666;
   letter-spacing: 0.02em;
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+  }
 }
 
 

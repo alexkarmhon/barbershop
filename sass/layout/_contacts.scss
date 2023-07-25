@@ -100,13 +100,18 @@
 }
 
 .adress-link {
+  position: relative;
   align-items: center;
+  margin-left: 40px;
 
   &--dark {
     color: var(--dark-theme-secondary-text);
   }
 
   &__icon {
+    position: absolute;
+    top: 7px;
+    left: -40px;
     margin-right: 20px;
     fill: none;
     stroke: var(--dark-theme-secondary-text);
@@ -128,7 +133,10 @@
     align-items: center;
   }
   .adress, .time {
-    width: 330px;
+    width: 300px;
+  }
+  .adress-list {
+    width: 220px;
   }
 }
 

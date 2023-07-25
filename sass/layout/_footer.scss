@@ -2,10 +2,19 @@
   display: flex;
   align-items: center;
   width: 100%;
+  padding-top: 44px;
+  padding-bottom: 44px;
 } 
 
 .copyright {
   display: flex;
   align-items: center;
   margin: 0;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.363;
+  letter-spacing: 0.2em;
+  color: var(--dark-theme-secondary-text);
 }
+
