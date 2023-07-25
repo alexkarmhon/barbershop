@@ -191,20 +191,27 @@ section {
   z-index: 2;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  padding: 15px;
+  overflow: auto;
   background-color: rgba(85, 85, 85, 0.5);
   transform: scale(1);
   transition: transform 400ms ease-out, opacity 400ms ease-out;
 }
 
+.mobile-open {
+  overflow: hidden;
+}
+
 .mobile-menu {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   width: 337px;
-  height: 100vh;
+  height: max-content;
   padding: 118px 40px;
+  overflow: auto;
   color: var(--main-title-color);
   font-family: var(--main-font);
   font-weight: 600;
@@ -1155,9 +1162,10 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
+  overflow: auto;
   display: block;
-  width: 100vw;
-  height: 100vh;
+  width: 90%;
+  height: 90%;
   padding: 130px 40px;
   transform: translate(-50%, -50%);
   background-color: var(--body-background-color);
@@ -1165,8 +1173,6 @@ section {
 @media screen and (min-width: 480px) {
   .modal {
     display: flex;
-    width: 90vw;
-    height: 600px;
   }
 }
 @media screen and (min-width: 768px) {

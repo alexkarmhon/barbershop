@@ -1,10 +1,15 @@
+.mobile-open{
+  overflow: hidden;
+}
+
 .mobile-menu {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   width: 337px;
-  height: 100vh;
+  height: max-content;
   padding: 118px 40px;
+  overflow: auto;
 
   color: var(--main-title-color);
   
