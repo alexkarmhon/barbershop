@@ -59,7 +59,7 @@
     </div>
 
     <div class="backdrop is-hidden" data-mobile>
-      <div class="mobile-menu mobile-open">
+      <div class="mobile-menu">
 
         <button type="button" class="btn-close" data-mobile-close>
           <svg class="btn-close-icon" width="40" height="40">
@@ -126,16 +126,25 @@
           <ul class="about-list list">
             <li class="about-list__item">
               <picture class="picture">
+                
+                <source srcset="./images/about/about-desktop/aboutimg1-desktop.webp 1x, ./images/about/about-desktop/aboutimg1-desctop@2x.webp 2x" type="img/webp" media="(min-width: 1280px)">
                 <source srcset="./images/about/about-desktop/aboutimg1-desktop.jpg 1x, ./images/about/about-desktop/aboutimg1-desctop@2x.jpg 2x" media="(min-width: 1280px)">
+
+                <source srcset="./images/about/about-tablet/aboutimg1-tablet.webp 1x, ./images/about/about-tablet/aboutimg1-tablet@2x.webp 2x" type="img/webp" media="(min-width: 768px)">
                 <source srcset="./images/about/about-tablet/aboutimg1-tablet.jpg 1x, ./images/about/about-tablet/aboutimg1-tablet@2x.jpg 2x" media="(min-width: 768px)">
-                <img src="./images/about/about-tablet/aboutimg1-tablet.jpg" alt="майстер бриє бороду">
+                
+                <img src="./images/about/about-tablet/aboutimg1-tablet.jpg" alt="майстер бриє бороду" class="img" loading="lazy">
               </picture>
             </li>
             <li class="about-list__item">
               <picture class="picture">
+                <source srcset="./images/about/about-desktop/aboutimg2-desktop.webp 1x, ./images/about/about-desktop/aboutimg2-desctop@2x.webp 2x" type="img/webp" media="(min-width: 1280px)">
                 <source srcset="./images/about/about-desktop/aboutimg2-desktop.jpg 1x, ./images/about/about-desktop/aboutimg2-desctop@2x.jpg 2x" media="(min-width: 1280px)">
+
+                <source srcset="./images/about/about-tablet/aboutimg2-tablet.webp 1x, ./images/about/about-tablet/aboutimg2-tablet@2x.webp 2x" type="img/webp" media="(min-width: 768px)">
                 <source srcset="./images/about/about-tablet/aboutimg2-tablet.jpg 1x, ./images/about/about-tablet/aboutimg2-tablet@2x.jpg 2x" media="(min-width: 768px)">
-                <img src="./images/about/about-tablet/aboutimg2-tablet.jpg" alt="майстер стриже голову">
+
+                <img src="./images/about/about-tablet/aboutimg2-tablet.jpg" alt="майстер стриже голову" class="img" loading="lazy">
               </picture>
             </li>
           </ul>
@@ -257,10 +266,16 @@
         <ul class="masters-list list">
           <li class="masters-list__item">
             <picture class="picture">
+              <source srcset="./images/masters/masters-desktop/johnsmith-desktop.webp 1x, ./images/masters/masters-desktop/johnsmith-desktop@2x.webp 2x" type="img/webp" media="(min-width: 1280px)">
               <source srcset="./images/masters/masters-desktop/johnsmith-desktop.jpg 1x, ./images/masters/masters-desktop/johnsmith-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+
+              <source srcset="./images/masters/masters-tablet/johnsmith-tablet.webp 1x, ./images/masters/masters-tablet/johnsmith-tablet@2x.webp 2x" type="img/webp" media="(min-width: 768px)">
               <source srcset="./images/masters/masters-tablet/johnsmith-tablet.jpg 1x, ./images/masters/masters-tablet/johnsmith-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              
+              <source srcset="./images/masters/masters-mobile/johnsmith-mobile.webp 1x, ./images/masters/masters-mobile/johnsmith-mobile@2x.webp 2x" type="img/webp" media="(min-width: 480px)">
               <source srcset="./images/masters/masters-mobile/johnsmith-mobile.jpg 1x, ./images/masters/masters-mobile/johnsmith-mobile@2x.jpg 2x" media="(min-width: 480px)">
-              <img class="master-foto" src="./images/masters/masters-mobile/johnsmith-mobile.jpg" alt="фото барбера джон сміт">
+              
+              <img class="img master-foto" src="./images/masters/masters-mobile/johnsmith-mobile.jpg" alt="фото барбера джон сміт" loading="lazy">
             </picture>
             <h3 class="master-name" lang="en">John Smith</h3>
             <p lang="en" class="description master-description">Extreme Barber</p>
@@ -297,10 +312,16 @@
           </li>
           <li class="masters-list__item">
             <picture class="picture">
+              <source srcset="./images/masters/masters-desktop/micheledoe-desktop.webp 1x, ./images/masters/masters-desktop/micheledoe-desktop@2x.webp 2x" type="img/webp" media="(min-width: 1280px)">
               <source srcset="./images/masters/masters-desktop/micheledoe-desktop.jpg 1x, ./images/masters/masters-desktop/micheledoe-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+              
+              <source srcset="./images/masters/masters-tablet/micheledoe-tablet.webp 1x, ./images/masters/masters-tablet/micheledoe-tablet@2x.webp 2x" type="img/webp" media="(min-width: 768px)">
               <source srcset="./images/masters/masters-tablet/micheledoe-tablet.jpg 1x, ./images/masters/masters-tablet/micheledoe-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              
+              <source srcset="./images/masters/masters-mobile/micheledoe-mobile.webp 1x, ./images/masters/masters-mobile/micheledoe-mobile@2x.webp 2x" type="img/webp" media="(min-width: 480px)">
               <source srcset="./images/masters/masters-mobile/micheledoe-mobile.jpg 1x, ./images/masters/masters-mobile/micheledoe-mobile@2x.jpg 2x" media="(min-width: 480px)">
-              <img class="master-foto" src="./images/masters/masters-mobile/micheledoe-mobile.jpg" alt="фото барбера майкл доу">
+
+              <img class="img master-foto" src="./images/masters/masters-mobile/micheledoe-mobile.jpg" alt="фото барбера майкл доу" loading="lazy">
             </picture>
             <h3 class="master-name" lang="en">Michele Doe</h3>
             <p lang="en" class="description master-description">Extreme Barber</p>
@@ -337,10 +358,16 @@
           </li>
           <li class="masters-list__item">
             <picture class="picture">
+              <source srcset="./images/masters/masters-desktop/alanblack-desktop.webp 1x, ./images/masters/masters-desktop/alanblack-desktop@2x.webp 2x" type="img/webp" media="(min-width: 1280px)">
               <source srcset="./images/masters/masters-desktop/alanblack-desktop.jpg 1x, ./images/masters/masters-desktop/alanblack-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+              
+              <source srcset="./images/masters/masters-tablet/alanblack-tablet.webp 1x, ./images/masters/masters-tablet/alanblack-tablet@2x.webp 2x" type="img/webp" media="(min-width: 768px)">
               <source srcset="./images/masters/masters-tablet/alanblack-tablet.jpg 1x, ./images/masters/masters-tablet/alanblack-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              
+              <source srcset="./images/masters/masters-mobile/alanblack-mobile.webp 1x, ./images/masters/masters-mobile/alanblack-mobile@2x.webp 2x" type="img/webp" media="(min-width: 480px)">
               <source srcset="./images/masters/masters-mobile/alanblack-mobile.jpg 1x, ./images/masters/masters-mobile/alanblack-mobile@2x.jpg 2x" media="(min-width: 480px)">
-              <img class="master-foto" src="./images/masters/masters-mobile/alanblack-mobile.jpg" alt="фото барбера алан блек">
+
+              <img class="img master-foto" src="./images/masters/masters-mobile/alanblack-mobile.jpg" alt="фото барбера алан блек" loading="lazy">
             </picture>
             <h3 class="master-name" lang="en">Alan Black</h3>
             <p lang="en" class="description master-description">Extreme Barber</p>
@@ -386,34 +413,58 @@
         <ul class="fotogalery list">
           <li class="fotogalery__item">
             <picture >
-            <source srcset="./images/galery/galery-desktop/foto1-desktop.jpg 1x, ./images/galery/galery-desktop/foto1-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+              <source srcset="./images/galery/galery-desktop/foto1-desktop.webp 1x, ./images/galery/galery-desktop/foto1-desktop@2x.webp 2x" type="img/webp" media="(min-width: 1280px)">
+              <source srcset="./images/galery/galery-desktop/foto1-desktop.jpg 1x, ./images/galery/galery-desktop/foto1-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+              
+              <source srcset="./images/galery/galery-tablet/foto1-tablet.webp 1x, ./images/galery/galery-tablet/foto1-tablet@2x.webp 2x" type="img/webp" media="(min-width: 768px)">
               <source srcset="./images/galery/galery-tablet/foto1-tablet.jpg 1x, ./images/galery/galery-tablet/foto1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              
+              <source srcset="./images/galery/galery-mobile/foto1-mobile.webp 1x, ./images/galery/galery-mobile/foto1-mobile@2x.webp 2x" type="img/webp" media="(min-width: 480px)">
               <source srcset="./images/galery/galery-mobile/foto1-mobile.jpg 1x, ./images/galery/galery-mobile/foto1-mobile@2x.jpg 2x" media="(min-width: 480px)">
-              <img class="picture" src="./images/galery/galery-mobile/foto1-mobile.jpg" alt="барбер стриже клієнта машинкою">
+              
+              <img class="img picture" src="./images/galery/galery-mobile/foto1-mobile.jpg" alt="барбер стриже клієнта машинкою" loading="lazy">
             </picture>
           </li>
           <li class="fotogalery__item">
             <picture>
+              <source srcset="./images/galery/galery-desktop/foto2-desktop.webp 1x, ./images/galery/galery-desktop/foto2-desktop@2x.webp 2x" type="img/webp" media="(min-width: 1280px)">
               <source srcset="./images/galery/galery-desktop/foto2-desktop.jpg 1x, ./images/galery/galery-desktop/foto2-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+              
+              <source srcset="./images/galery/galery-tablet/foto2-tablet.webp 1x, ./images/galery/galery-tablet/foto2-tablet@2x.webp 2x" type="img/webp" media="(min-width: 768px)">
               <source srcset="./images/galery/galery-tablet/foto2-tablet.jpg 1x, ./images/galery/galery-tablet/foto2-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              
+              <source srcset="./images/galery/galery-mobile/foto2-mobile.webp 1x, ./images/galery/galery-mobile/foto2-mobile@2x.webp 2x" type="img/webp" media="(min-width: 480px)">
               <source srcset="./images/galery/galery-mobile/foto2-mobile.jpg 1x, ./images/galery/galery-mobile/foto2-mobile@2x.jpg 2x" media="(min-width: 480px)">
-              <img class="picture" src="./images/galery/galery-mobile/foto2-mobile.jpg" alt="барбер бриє бороду клієнта">
+              
+              <img class="img picture" src="./images/galery/galery-mobile/foto2-mobile.jpg" alt="барбер бриє бороду клієнта" loading="lazy">
             </picture>
           </li>
           <li class="fotogalery__item">
             <picture>
+              <source srcset="./images/galery/galery-desktop/foto3-desktop.webp 1x, ./images/galery/galery-desktop/foto3-desktop@2x.webp 2x" type="img/webp" media="(min-width: 1280px)">
               <source srcset="./images/galery/galery-desktop/foto3-desktop.jpg 1x, ./images/galery/galery-desktop/foto3-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+              
+              <source srcset="./images/galery/galery-tablet/foto3-tablet.webp 1x, ./images/galery/galery-tablet/foto3-tablet@2x.webp 2x" type="img/webp" media="(min-width: 768px)">
               <source srcset="./images/galery/galery-tablet/foto3-tablet.jpg 1x, ./images/galery/galery-tablet/foto3-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              
+              <source srcset="./images/galery/galery-mobile/foto3-mobile.webp 1x, ./images/galery/galery-mobile/foto3-mobile@2x.webp 2x" type="img/webp" media="(min-width: 480px)">
               <source srcset="./images/galery/galery-mobile/foto3-mobile.jpg 1x, ./images/galery/galery-mobile/foto3-mobile@2x.jpg 2x" media="(min-width: 480px)">
-              <img class="picture" src="./images/galery/galery-mobile/foto3-mobile.jpg" alt="барбер витирає обличчя клієнта рушиком">
+              
+              <img class="img picture" src="./images/galery/galery-mobile/foto3-mobile.jpg" alt="барбер витирає обличчя клієнта рушиком" loading="lazy">
             </picture>
           </li>
           <li class="fotogalery__item">
             <picture>
+              <source srcset="./images/galery/galery-desktop/foto4-desktop.webp 1x, ./images/galery/galery-desktop/foto4-desktop@2x.webp 2x" type="img/webp" media="(min-width: 1280px)">
               <source srcset="./images/galery/galery-desktop/foto4-desktop.jpg 1x, ./images/galery/galery-desktop/foto4-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+              
+              <source srcset="./images/galery/galery-tablet/foto4-tablet.webp 1x, ./images/galery/galery-tablet/foto4-tablet@2x.webp 2x" type="img/webp" media="(min-width: 768px)">
               <source srcset="./images/galery/galery-tablet/foto4-tablet.jpg 1x, ./images/galery/galery-tablet/foto4-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              
+              <source srcset="./images/galery/galery-mobile/foto4-mobile.webp 1x, ./images/galery/galery-mobile/foto4-mobile@2x.webp 2x" type="img/webp" media="(min-width: 480px)">
               <source srcset="./images/galery/galery-mobile/foto4-mobile.jpg 1x, ./images/galery/galery-mobile/foto4-mobile@2x.jpg 2x" media="(min-width: 480px)">
-              <img class="picture" src="./images/galery/galery-mobile/foto4-mobile.jpg" alt="барбер голить клієнту шию">
+              
+              <img class="img picture" src="./images/galery/galery-mobile/foto4-mobile.jpg" alt="барбер голить клієнту шию" loading="lazy">
             </picture>
           </li>
         </ul>

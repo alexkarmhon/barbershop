@@ -18,10 +18,10 @@
 
 @media screen and (max-width: 767px) {
   .hero {
-    background-image: url(../images/hero/hero-mobile/hero-image-mobile1.jpg);
+    background-image: url(../images/hero/hero-mobile/Slider-img-3.jpg);
     background-size: cover;
     @media screen and (min-resolution: 2dppx) {
-      background-image: url(../images/hero/hero-mobile/hero-image-mobile1@2x.jpg);
+      background-image: url(../images/hero/hero-mobile/Slider-img-3@2x.jpg);
     }
   }
   
@@ -72,6 +72,10 @@
 
 
 @media screen and (min-width: 1280px) {
+  .hero-title {
+    font-size: 72px;
+    line-height: 1.166;
+  }
   .hero-right-part {
     display: block;
     align-items: center;
